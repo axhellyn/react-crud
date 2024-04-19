@@ -2,6 +2,7 @@ import Form from "./components/Form"
 import TasksList from "./components/TasksList"
 import { useState } from "react";
 import { initialTask } from './utils/Tasks';
+import Header from "./components/Header";
 
 function App() {
   const [tasks, setTasks] = useState(initialTask);
@@ -27,6 +28,7 @@ function App() {
 
   return (
     <div className="min-h-screen w-screen flex flex-col items-center bg-slate-50">
+      <Header />
       <Form onAddTask={handleAddTask}/>
       <TasksList tasks={tasks} onDeleteTask={handleDeleteTask} onEditTask={handleEditTask} currentId={updateTask} onSubmitUpdate={handleSubmitUpdate}/>
     </div>
