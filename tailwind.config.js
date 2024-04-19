@@ -7,6 +7,10 @@ export default {
   darkMode: 'class',
   theme: {
     extend: {
+      colors: {
+       'purpleDark' : '#392467',
+       'purpleMdDark': '#5D3587'
+      },
       fontFamily: {
         'poppins': ['Poppins'],
      }

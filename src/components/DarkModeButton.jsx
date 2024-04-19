@@ -22,11 +22,6 @@ export default function DarkModeButton() {
   });
 
   return (
-    // <FontAwesomeIcon
-    //   onClick={handleClick}
-    //   icon={dark ? faToggleOn : faToggleOff}
-    //   className="mx-10 my-5 h-12 cursor-pointer dark:text-gray-100"
-    // />
-    <button onClick={handleClick} className="text-xl text-white dark:text-purple-900">{dark? <MdLightMode /> : <MdDarkMode />}</button>
+    <button onClick={handleClick} className="text-xl text-white">{dark? <MdLightMode /> : <MdDarkMode />}</button>
   );
 }

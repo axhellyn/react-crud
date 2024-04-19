@@ -27,7 +27,7 @@ function App() {
 }
 
   return (
-    <div className="min-h-screen w-screen flex flex-col items-center bg-slate-50 dark:bg-purple-950">
+    <div className="min-h-screen w-screen flex flex-col items-center bg-purple-200 dark:bg-purpleDark">
       <Header />
       <Form onAddTask={handleAddTask}/>
       <TasksList tasks={tasks} onDeleteTask={handleDeleteTask} onEditTask={handleEditTask} currentId={updateTask} onSubmitUpdate={handleSubmitUpdate}/>
