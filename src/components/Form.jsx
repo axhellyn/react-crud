@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import PropTypes from 'prop-types' 
 
 export default function Form({onAddTask}) {
@@ -8,7 +8,7 @@ export default function Form({onAddTask}) {
   function handleSubmit(e){
     e.preventDefault();
 
-    if(!title) return;
+    if(!title || !description) return alert("isi yang lengkap bg");
 
     const newTask = {
       id: Date.now(),

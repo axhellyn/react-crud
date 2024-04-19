@@ -20,6 +20,7 @@ function App() {
   }
 
   function handleSubmitUpdate(id, title, description){
+    if(!title || !description) return alert("isi yang lengkap bg");
     setTasks((e) => e.map(task => (task.id === id ? {...task, title: title, description:description } : task)))
     setUpdateTask(-1);
 }
